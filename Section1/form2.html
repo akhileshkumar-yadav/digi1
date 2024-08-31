@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body{
+            background-color: #e3d7e7;
+        }
+        .form1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            
+        }
+        .form{
+            background-color: rgb(235, 211, 248);
+            width: 500px;
+            height: 74%;
+            padding: 3%;
+            box-shadow: 1px 1px 10px 1px rgba(122, 28, 172,2);
+            /* box-shadow: -10px -10px red; */
+            color: #2E073F;
+            text-shadow: 0.5px 0.5px 5px  #2E073F;
+        }
+        
+        table{
+            border-collapse:separate;
+        }
+        td{
+            border: 5px solid rgb(235, 211, 248);
+        }
+        input{
+            /* box-shadow: 1px 1px 3px  #c880e6; */
+            border: none;
+            border-bottom: 2px solid rgb(91, 89, 89);
+            background-color:rgb(235, 211, 248) ;
+        }
+        button
+        {
+            box-shadow: 1px 1px 3px  #c880e6;  
+        }
+        select{
+            box-shadow: 1px 1px 10px  #c880e6;  
+        }
+    </style>
+</head>
+<body>
+    <div class="form1">
+    <div class="form">
+    <form action="">
+    <table>
+        <h1>Admission Form</h1> 
+        <tr>
+            <td>
+                First name :
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last name:
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Father name :
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mother name :
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+    <tr>
+        <td>
+            Date of Birth :
+        </td>
+        <td>
+            <input type="date">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email :
+        </td>
+        <td>
+            <input type="email">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Select course :
+        </td>
+        <td>
+            <select name="" id="">
+                <option value="">--select--</option>
+                <option value="">   JAVA</option>
+                <option value="">C++</option>
+                <option value="">PHP</option>
+                <option value="">JAVA SCRIPT</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender :
+        </td>
+        <td>
+            <input type="radio" name="gender">Femail
+            <input type="radio" name="gender">mail
+        </td>
+        <!-- <td>
+            <input type="radio" name="gender">mail
+        </td> -->
+    </tr>
+    <tr>
+        <td> Hobbies :</td>
+        <td><input type="checkbox"  name="check">Singing
+        <input type="checkbox" name="check">Dancing
+        <input type="checkbox" name="check">Play Cricket
+        <input type="checkbox" name="check">Read book</td>
+    </tr>
+    <tr>
+        <td>Address :</td>
+        <td>
+            <textarea name="" id=""></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td> Photo :</td>
+        <td><input style="border: none;" type="file"></td>
+    </tr>
+    <tr>
+        <td><button>Submit</button></td>
+    </tr>
+    </table>
+</form>
+</div>
+</div>
+</body>
+</html>

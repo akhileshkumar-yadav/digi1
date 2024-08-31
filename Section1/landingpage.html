@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(179, 239, 239);
+}
+h2{
+    padding-left: 20px;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.ul-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    padding: 10px;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+    font-family: sans-serif;
+}
+li:hover{
+    color:red;
+}
+@media(max-width:600px){
+    .ul-1{
+        display: none;
+    }
+}
+.a{
+    padding-right: 20px;
+}
+@media(min-width:601px){
+    .a{
+        display: none;
+    
+    }
+}
+        header{
+            background-image: url('https://img.freepik.com/free-photo/little-girl-glasses-blue-backpack-with-oranges-created-with-generative-ai-technology_185193-162002.jpg?size=626&ext=jpg&ga=GA1.1.1237683001.1684563999&semt=ais_hybrid');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40vh;
+            text-align: center;
+            /* padding: 50px; */
+        }
+        .container{
+            height: inherit;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            flex-direction: column;
+        }
+        .feature-sec{
+            padding: 60px 60px;
+        }
+        .card-container{
+            /* display: flex; */
+            margin-top: 10px;
+            justify-content: flex-start;
+           
+        }
+        
+       @media(min-width:800px){
+        .card-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+       }
+        .card-1{
+            width: 350px;
+            padding-top: 30px;
+            text-align: center;
+            background-color: #0f3c4c;
+            box-shadow: 2px 3px 3px 0 #0f3c4c;
+            height: 300px;
+            border-radius: 10px;
+            transition-duration: 0.3s;
+        }
+        .card-1:hover{
+            background-color: #1a6985;
+            transform: translatey(-50px);
+            color: white;
+        }
+        @media(min-width:500){
+            .card-1{
+                width: 250px;
+                height: 250px;
+                font-size: small;
+            }
+        }
+        .card-2{
+            width: 350px;
+            padding-top: 30px;
+            text-align: center;
+            background-color: #0f3c4c;
+            box-shadow: 2px 3px 3px 0 #0f3c4c;
+            height: 300px;
+            border-radius: 10px;
+            transition-duration: 0.3s;
+        }
+        .card-2:hover{
+            background-color: #1a6985;
+            transform: translatey(-50px);
+            color: white;
+        }
+        .card-3{
+            width: 350px;
+            padding-top: 30px;
+            text-align: center;
+            background-color: #0f3c4c;
+            box-shadow: 2px 3px 3px 0 #0f3c4c;
+            height: 300px;
+            border-radius: 10px;
+            transition-duration: 0.3s;
+        }
+        .card-3:hover{
+            background-color: #1a6985;
+            transform: translatey(-50px);
+            color: white;
+        }
+        .sec-title{
+            font-size: xx-large;
+            font-weight: bolder;
+            padding-bottom: 50px;
+        }
+        .sec-title:hover{
+            color: #081feb;
+            font-size: 40px;
+        }
+        .card-1 h2{
+            padding-top: 50px;
+        }
+        .card-2 h2{
+            padding-top: 50px;
+        }
+        .card-3 h2{
+            padding-top: 50px;
+        }
+        .info{
+            /* background-color: #0f3c4c; */
+            /* width: 100%; */
+            height: 60vh;
+            margin: 0px 20px 0px 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .info1{
+            width: 30%;
+            height: 300px;
+            color: rgb(9, 9, 9);
+        }
+        .info1 h1{
+            padding-top:40px ;
+            padding-bottom: 30px;
+        }
+        .btn{
+            margin-top: 30px;
+            background-color: #4051e9;
+            height: 35px;
+            width: 150px;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 255, 255, 0.24);
+            font-size: 15px;
+            font-weight: 300;
+            color: white;
+        }
+        hr{
+            margin: 0px 70px;
+            border: 1px solid rgb(187, 193, 200);
+        }
+    </style>
+</head>
+<body>
+    <!-- header
+     drribale website for bck
+    main
+    footer -->
+    <nav>
+        <div>
+            <h2>Yadav</h2>
+        </div>
+        <div class="list">
+            <ul class="ul-1">
+                <li>Home </li>
+                <li>ContactUs</li>
+                <li>AboutUs</li>
+                <li>Login</li>
+                <li>SignUp</li>
+            </ul>
+            <h3 class="a">Akhilesh</h3>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+        <h2 style="font-size:60px;font-family:serif;color:white;">Welcome To Our Website</h2>
+        <!-- <p>We offer amezing services to help you succeed</p> -->
+        </div>
+        <main>
+            <section class="feature-sec">
+                    <h1 class="sec-title">Our Feature</h1>
+                    <div class="card-container">
+                        <div class="card-1">
+                            <i class=" fa-4x fa-solid fa-bolt"></i>
+                            <h2>Fast Solution</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quas.</p>
+                        </div>
+                        <div class="card-2">
+                            <i class=" fa-4x fa-solid fa-bolt"></i>
+                            <h2>Fast Solution</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quas.</p>
+                        </div>
+                        <div class="card-3">
+                            <i class=" fa-4x fa-solid fa-bolt "></i>
+                            <h2>Fast Solution</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, quas.</p>
+                        </div>
+                    </div>
+            </section>
+            <div class="info">
+                <div class="info1">
+                   <h1>Hello i am Akhilesh yadav</h1>  
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum reiciendis distinctio esse recusandae sequi porro velit adipisci consequatur non suscipit, illum fugiat voluptatem, iste temporibus enim eaque officia reprehenderit!</p> 
+                   <button class="btn">
+                    More About Pro
+                   </button>  
+                </div>
+                <div class="info1">
+                    <img style=" width: 400px; height: 300px;" src="https://img.freepik.com/free-vector/happy-boy-computer-with-beach-screen_1308-45842.jpg?ga=GA1.1.1237683001.1684563999&semt=ais_hybrid" alt="">
+                </div>
+            </div>
+            <hr>
+            <div class="info">
+                <div class="info1">
+                    <img style=" width: 400px; height: 300px;" src="https://img.freepik.com/free-vector/girl-browsing-social-media_1308-131458.jpg?ga=GA1.1.1237683001.1684563999&semt=ais_hybrid" alt="">
+                </div>
+                <div class="info1">
+                    <h1>Hello i am Akhilesh yadav</h1>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum reiciendis distinctio esse recusandae sequi porro velit adipisci consequatur non suscipit, illum fugiat voluptatem, iste temporibus enim eaque officia reprehenderit!</p> 
+                    <button class="btn">
+                     More About Pro
+                    </button>  
+                 </div>
+            </div>
+            <hr>
+            <div class="info">
+                <div class="info1">
+                    <h1>Hello i am Akhilesh yadav</h1>  
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eum reiciendis distinctio esse recusandae sequi porro velit adipisci consequatur non suscipit, illum fugiat voluptatem, iste temporibus enim eaque officia reprehenderit!</p> 
+                    <button class="btn">
+                     More About Pro
+                    </button>  
+                 </div>
+                 <div class="info1">
+                     <img style=" width: 400px; height: 300px;" src="https://img.freepik.com/free-vector/online-kids_24877-51997.jpg?ga=GA1.1.1237683001.1684563999&semt=ais_hybrid" alt="">
+                 </div>
+            </div>
+            <hr>
+        </main>
+        <footer>
+
+        </footer>
+    </header>
+</body>
+</html>
