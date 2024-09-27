@@ -93,18 +93,113 @@ function square (num){
 
 // even(100);
 
-let str = (str) => {
-    for (let i = 0; i < str.length; i++) {
+// let str = (str) => {
+//     for (let i = 0; i < str.length; i++) {
         
         
-        const element = str[i];
-        console.log(element);
+//         const element = str[i];
+//         console.log(element);
         
-    }
-    console.log(str.length);
-}
+//     }
+//     console.log(str.length);
+// }
 
-str("akhileshyadav");
+// str("akhileshyadav");
+
+//   Ternary oprator
+
+// let age = 40;
+// let result = age >= 18 ? age>30 && age<30 ? "you are senior":"retired pertion" : "minor";
+
+// console.log(result);
+
+// function without using return statement 
+// without return fun nahi use hota hai
+function add (a,b) {
+    console.log(a+b);
+}
+let totaleSum = add(23,45);
+console.log(totaleSum);
+
   
    
+//  function using return statement 
+function sub (a,b) {
+    return b-a;
+}
+let totalSub = sub(23,45);
+console.log(totalSub);
+
+//   install next js 
+//  npm uninstall create-next-app -g
+
+// npx create-next-app@latest
+//  y
+
+function fun1 (a,b) {
+    let sum = a + b;
+    console.log(sum);
+    return a-b;
+};
+
+console.log(fun1(34,10));
+
+ let count = null
+function str1(str){
+    for(let i = 0; i<str.length; i++){
+        if(str[i]==='a' || str[i]==='e' || str[i]==='i' || str[i]=='o' || str[i]==='u'){
+            count++;
+            console.log(str[i]);
+            
+        }
+    }
+    console.log(count);
+    // console.log(str.length);
+    
+    
+    
+}
+
+str1("akhilesh");
+// str1("aeiou");
+// str1("aeiou");
+
+let cou = null;
+const findVovel = (st) => {
+        for (const stri of st) {
+             if(stri==='a' || stri==='e' || stri==='i' || stri==='o' || stri==='u'){
+                cou++;
+                console.log(stri);
+                
+             }
+        }
+        console.log(cou);
+        
+}
+findVovel("yadav")
+
+
+let arr = [1,2,3,4,5,6,7,8,9,10];
+arr.forEach((vel)=>{
+    if(vel%3===0){
+        console.log(vel **2);
+    }
+})
+
+let M = arr.map((vel) => {
+    
+        return vel*3;
+});
+console.log(M);
+let f = arr.map((vel) => {
+        if(vel%2==0){
+        return vel**2;
+        }
+});
+console.log(f);
+
+
+
+
+
 

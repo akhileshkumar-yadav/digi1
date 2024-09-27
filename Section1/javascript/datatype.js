@@ -11,11 +11,11 @@
 // array
 // object
 // function
-console.log("````````````````````````````````````````````````````````````````````````````````");
-let b = 20;
-let a = "hello";
-console.log(typeof b);
-console.log(typeof a);
+// console.log("````````````````````````````````````````````````````````````````````````````````");
+// let b = 20;
+// let a = "hello";
+// console.log(typeof b);
+// console.log(typeof a);
 
-let str = "akhilesh";
-console.log(typeof str);
+// let str = "akhilesh";
+// console.log(typeof str);

@@ -77,6 +77,19 @@ const evenNum = arr.filter((x) => x%2==0)
 console.log(evenNum);
 
 
+let marks = [89,90,87,70,67];
+let average = null;
+let count = null;
+for (const mark of marks) {
+    average += mark;
+    count++
+}
+average = average/count;
+console.log(` ${average} %`);
+
+
+
+
 
 
 
