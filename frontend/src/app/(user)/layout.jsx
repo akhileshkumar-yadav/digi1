@@ -1,10 +1,9 @@
 'use client'
 // import "./globals.css";
-import Footer1 from "./footer1";
+import Footer from "./footer";
 import { Toaster } from "react-hot-toast";
 // import { AppProvider } from "@/context/appContext";
-// import Navbar1 from "./navbar1";
-import Sidebar from "./sidebar";
+import Navbar from "./navbar";
 
 // export const metadata = {
 //   title: 'Next.js',
@@ -16,11 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         {/* <AppProvider> */}
-          {/* <Navbar1  /> */}
-          {/* <Toaster position="top-right" /> */}
-          <Sidebar />
+          <Navbar />
+          <Toaster position="top-right" />
           {children}
-          <Footer1 />
+          <Footer />
         {/* </AppProvider> */}
       </body>
     </html>

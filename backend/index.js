@@ -13,8 +13,8 @@ const cors = require('cors')
 // })
 
 
-const UserRouter = require('./Routers/user')
-const productRouter = require('./Routers/product')
+const UserRouter = require('./routers/user')
+// const productRouter = require('./routers/product')
 const prodRouter = require('./routers/prod')
 // middleman
 // middleware
@@ -23,7 +23,7 @@ app.use(cors({
     origin: ['http://localhost:3000'],
 }))
 app.use('/user', UserRouter)
-app.use('/product', productRouter)
+// app.use('/product', productRouter)
 app.use('/prod', prodRouter)
 
 

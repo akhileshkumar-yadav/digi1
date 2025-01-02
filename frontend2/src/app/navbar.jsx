@@ -1,7 +1,10 @@
+'use client'
 import Link from 'next/link'
 import React from 'react'
+import useAppContext from '@/context/appContext'
 
 const Navbar = () => {
+  const { loggedIn, logout } = useAppContext();
   return (
     <>
      <nav className="flex flex-wrap items-center justify-between p-3 bg-teal-500/50">

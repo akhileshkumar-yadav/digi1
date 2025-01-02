@@ -10,6 +10,7 @@ const Product2 = () => {
         initialValues: {
             name: '',
             price: '',
+            discount:'',
             memory: '',
             camera: '',
             detail: '',
@@ -38,7 +39,7 @@ const Product2 = () => {
     });
     return (
         <>
-            <div className='flex justify-center items-center my-5'>
+            <div className='flex justify-center ml-[250px]  items-center my-5'>
                 <div className='w-[50%] bg-blue-300 hover:bg-blue-400 p-2 px-10 rounded-sm shadow-sm'>
                     <h1 className='text-2xl font-bold text-center hover:text-white '>Product Detail Information</h1>
                     <form onSubmit={product2Form.handleSubmit} >
@@ -67,6 +68,19 @@ const Product2 = () => {
                             name='price'
                             onChange={product2Form.handleChange}
                             value={product2Form.values.price}
+
+                        />
+                        <label className='text-xl font-semibold block mx-8 ' htmlFor="">discount </label>
+                        {product2Form.errors.discount && product2Form.touched.discount ? (
+                            <div className="text-red-500">{product2Form.errors.discount}</div>
+                        ) : null}
+                        <input className='block w-[90%] mx-8 py-1 text-lg font-semibold px-2 mb-3'
+                            placeholder='price'
+                            id='discount'
+                            type="text"
+                            name='discount'
+                            onChange={product2Form.handleChange}
+                            value={product2Form.values.discount}
 
                         />
                         <label className='text-xl font-semibold block mx-8 ' htmlFor="">Memory</label>

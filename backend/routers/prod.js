@@ -26,5 +26,16 @@ router.get('/getall',(req,res) => {
         res.status(500).json({error:'Internal server Error'});
     });
 })
+router.delete('/delete/:id', (req,res) => {
+    Model.findByIdAndDelete(req.params.id)
+    // then c asyncronouse function hai
+    .then((result) => {
+        res.json(result)
+    }).catch((err) => {
+       console.log(err)
+       res.status(500).json({ error: 'Internal Server Error'})
+        
+    });
+})
 
 module.exports = router;

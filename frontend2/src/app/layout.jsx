@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import { Toaster } from "react-hot-toast";
+import { AppProvider } from "@/context/appContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,10 +27,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > 
+      <AppProvider>
         <Navbar />
         <Toaster  position="top-right"/>
         {children}
         <Footer />
+        </AppProvider>
       </body>
     </html>
   );

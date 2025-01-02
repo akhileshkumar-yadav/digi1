@@ -3,6 +3,8 @@ import { useFormik } from 'formik'
 import Link from 'next/link'
 import React from 'react'
 import *as Yup from 'yup'
+import {useRouter} from 'next/navigation'
+import useAppContext from '@/context/appContext'
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -14,6 +16,9 @@ const loginSchema = Yup.object().shape({
 
 })
 const Login = () => {
+  const {setLoggedIn, setCurrentUser} = useAppContext();
+
+  const router = useRouter()
   const loginForm = useFormik({
     initialValues: {
       email: '',

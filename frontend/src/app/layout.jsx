@@ -1,8 +1,9 @@
 'use client'
-import Navbar from "./navbar"
 import "./globals.css";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import { Toaster } from "react-hot-toast";
+import { AppProvider } from "@/context/appContext";
+// import Navbar from "./user/navbar";
 
 // export const metadata = {
 //   title: 'Next.js',
@@ -13,11 +14,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <Toaster position="top-right"/>
-        {children}
-        <Footer />
-        </body>
+        <AppProvider>
+          {/* <Navbar /> */}
+          <Toaster position="top-right" />
+          {children}
+          {/* <Footer /> */}
+        </AppProvider>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+      </body>
     </html>
   )
 }

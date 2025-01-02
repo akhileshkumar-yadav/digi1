@@ -5,6 +5,7 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     'node_modules/preline/dist/*.js',
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
@@ -14,6 +15,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require('preline/plugin'),
+  plugins: [
+          require('preline/plugin'),
+          require('flowbite/plugin'),
   ],
 };
